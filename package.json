@@ -2,7 +2,8 @@
   "name": "learn-sequalize",
   "version": "0.0.1",
   "scripts": {
-    "start": "cross-env NODE_ENV=production PORT=80 pm2 start ./bin/www -i 0",
+    "start": "nodemon ./bin/www",
+    "production": "cross-env NODE_ENV=production PORT=80 pm2 start ./bin/www ",
     "dev": "nodemon ./bin/www"
   },
   "dependencies": {
